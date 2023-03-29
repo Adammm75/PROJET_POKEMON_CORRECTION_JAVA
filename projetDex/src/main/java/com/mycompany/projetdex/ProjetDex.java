@@ -174,10 +174,7 @@ public class ProjetDex {
         fee.addResistance(tenebres);
         fee.addResistance(dragon);
 
-        fee.affFaiblesse();
-        fee.affResistance();
-        feu.affFaiblesse();
-        feu.affResistance();
+        
 
 
     }

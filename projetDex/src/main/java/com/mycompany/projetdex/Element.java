@@ -43,14 +43,18 @@ public class Element {
     }
 
     public void affFaiblesse() {
-        for (Element e:this.getFaiblesse())
-            System.out.println(e.getNom());
+        System.out.print("Faiblesse : ");
+        for (Element e : this.getFaiblesse()) {
+            System.out.format("%s ", e.getNom());
         }
-    public void affResistance()
-    {
-        for (Element e:this.getResistance())
-        {
-            System.out.println(e.getNom());
+        System.out.println();
+    }
+
+    public void affResistance() {
+        System.out.print("Résistance : ");
+        for (Element e : this.getResistance()) {
+            System.out.format("%s ", e.getNom());
         }
+        System.out.println();
     }
 }
