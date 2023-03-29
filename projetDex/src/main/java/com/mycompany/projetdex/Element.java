@@ -11,18 +11,46 @@ import java.util.ArrayList;
  * @author erwan
  */
 public class Element {
-    String nom;
-    ArrayList<Element> faiblesse;
-    ArrayList<Element> resistance;
-    
-    // Constructeur
-    
-    public void affFaiblesse()
-    {
-        // Affiche toutes les faiblesses
+    private String nom;
+    private ArrayList<Element> faiblesse;
+    private ArrayList<Element> resistance;
+
+    public Element(String nom) {
+        this.nom = nom;
+        this.faiblesse = new ArrayList<Element>();
+        this.resistance = new ArrayList<Element>();
     }
+    
+    public String getNom()
+    {
+        return nom;
+    }
+    public void addFaiblesse(Element e)
+    {
+        this.faiblesse.add(e);
+    }
+    public void addResistance(Element e)
+    {
+        this.resistance.add(e);
+    }
+    public ArrayList<Element> getFaiblesse() {
+        return faiblesse;
+    }
+
+    
+    public ArrayList<Element> getResistance() {
+        return resistance;
+    }
+
+    public void affFaiblesse() {
+        for (Element e:this.getFaiblesse())
+            System.out.println(e.getNom());
+        }
     public void affResistance()
     {
-        // Affiche toutes les resistances
+        for (Element e:this.getResistance())
+        {
+            System.out.println(e.getNom());
+        }
     }
 }

@@ -9,11 +9,31 @@ package com.mycompany.projetdex;
  * @author erwan
  */
 public class Competence {
-    String nom;
-    int niveau;
-    String typeDegat; // Physique ou Distant
+    private String nom;
+    private int niveau;
+    private String typeDegat; // Physique ou Distant
+
+    public Competence(String nom, int niveau, String typeDegat) {
+        if (!(typeDegat != "Physique" & typeDegat != "Distant"))
+        {
+            this.nom = nom;
+            this.niveau = niveau;
+            this.typeDegat = typeDegat;
+        }   
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public int getNiveau() {
+        return niveau;
+    }
+
+    public String getTypeDegat() {
+        return typeDegat;
+    }
     
-    // Constructeur /!\ a vérifier si "Physique" ou "Distant" ont bien été entré.
     
     
 }

@@ -9,12 +9,12 @@ package com.mycompany.projetdex;
  * @author erwan
  */
 public class Pokemon {
-    String nom;
-    int numeroPokedex;
-    Element element1;
-    Element element2;
-    Pokemon pokemonSupérieur;
-    Pokemon pokemonInferieur;
+    private String nom;
+    private int numeroPokedex;
+    private Element element1;
+    private Element element2;
+    private Pokemon pokemonSupérieur;
+    private Pokemon pokemonInferieur;
     
     // Constructeurs à faire (Plusieurs car un pokemon peut avoir un ou plusieurs type.
     // Un pokemon peut avoir une évolution supérieur et/ou une inférieur.

@@ -9,11 +9,20 @@ package com.mycompany.projetdex;
  * @author erwan
  */
 public class PokemonUnique {
-    Pokemon typePokemon;
-    int niveau;   
-    int experience;
-    int experienceMax;
+    private Pokemon typePokemon;
+    private String nom;
+    private int niveau;   
+    private int experience;
+    private int experienceMax;
     // Constructeur
+
+    public PokemonUnique(Pokemon typePokemon, String nom, int niveau, int experienceMax) {
+        this.typePokemon = typePokemon;
+        this.nom = nom;
+        this.niveau = niveau;
+        this.experience = 0;
+        this.experienceMax = experienceMax;
+    }
     
     public void gainXp(int xp)
     {
