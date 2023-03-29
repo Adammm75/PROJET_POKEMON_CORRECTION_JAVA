@@ -174,6 +174,103 @@ public class ProjetDex {
         fee.addResistance(tenebres);
         fee.addResistance(dragon);
 
+        // Création des objets Pokémon pour les 100 premiers du Pokédex
+        Pokemon bulbizarre = new Pokemon("Bulbizarre", 1, plante, poison);
+        Pokemon herbizarre = new Pokemon("Herbizarre", 2, plante, poison);
+        Pokemon florizarre = new Pokemon("Florizarre", 3, plante, poison);
+        bulbizarre.setPokemonSupérieur(herbizarre);
+        herbizarre.setPokemonInferieur(bulbizarre);
+        herbizarre.setPokemonSupérieur(florizarre);
+        florizarre.setPokemonInferieur(herbizarre);
+        
+        Pokemon salameche = new Pokemon("Salamèche", 4, feu);
+        Pokemon reptincel = new Pokemon("Reptincel", 5, feu);
+        Pokemon dracaufeu = new Pokemon("Dracaufeu", 6, feu, vol);
+        salameche.setPokemonSupérieur(reptincel);
+        reptincel.setPokemonInferieur(salameche);
+        reptincel.setPokemonSupérieur(dracaufeu);
+        dracaufeu.setPokemonInferieur(reptincel);
+        
+        Pokemon carapuce = new Pokemon("Carapuce", 7, eau);
+        Pokemon carabaffe = new Pokemon("Carabaffe", 8, eau);
+        Pokemon tortank = new Pokemon("Tortank", 9, eau);
+        carapuce.setPokemonSupérieur(carabaffe);
+        carabaffe.setPokemonInferieur(carapuce);
+        carabaffe.setPokemonSupérieur(tortank);
+        tortank.setPokemonInferieur(carabaffe);
+        
+        Pokemon chenipan = new Pokemon("Chenipan", 10, insecte);
+        Pokemon chrysacier = new Pokemon("Chrysacier", 11, insecte);
+        Pokemon papilusion = new Pokemon("Papilusion", 12, insecte, vol);
+        chenipan.setPokemonSupérieur(chrysacier);
+        chrysacier.setPokemonInferieur(chenipan);
+        chrysacier.setPokemonSupérieur(papilusion);
+        papilusion.setPokemonInferieur(chrysacier);
+        
+        Pokemon aspicot = new Pokemon("Aspicot", 13, insecte, poison);
+        Pokemon coconfort = new Pokemon("Coconfort", 14, insecte, poison);
+        Pokemon dardargnan = new Pokemon("Dardargnan", 15, insecte, poison);
+        aspicot.setPokemonSupérieur(coconfort);
+        coconfort.setPokemonInferieur(aspicot);
+        coconfort.setPokemonSupérieur(dardargnan);
+        dardargnan.setPokemonInferieur(coconfort);
+        
+        Pokemon roucool = new Pokemon("Roucool", 16, normal, vol);
+        Pokemon roucoups = new Pokemon("Roucoups", 17, normal, vol);
+        Pokemon roucarnage = new Pokemon("Roucarnage", 18, normal, vol);
+        roucool.setPokemonSupérieur(roucoups);
+        roucoups.setPokemonInferieur(roucool);
+        roucoups.setPokemonSupérieur(roucarnage);
+        roucarnage.setPokemonInferieur(roucoups);
+        
+        Pokemon rattata = new Pokemon("Rattata", 19, normal);
+        Pokemon rattatac = new Pokemon("Rattatac", 20, normal);
+        rattata.setPokemonSupérieur(rattatac);
+        rattatac.setPokemonInferieur(rattata);
+        
+        Pokemon piafabec = new Pokemon("Piafabec", 21, normal, vol);
+        Pokemon rapasdepic = new Pokemon("Rapasdepic", 22, normal, vol);
+        piafabec.setPokemonSupérieur(rapasdepic);
+        rapasdepic.setPokemonInferieur(piafabec);
+        
+        Pokemon abo = new Pokemon("Abo", 23, poison);
+        Pokemon arbok = new Pokemon("Arbok", 24, poison);
+        abo.setPokemonSupérieur(arbok);
+        arbok.setPokemonInferieur(abo);
+        
+        Pokemon pikachu = new Pokemon("Pikachu", 25, électrique);
+        Pokemon raichu = new Pokemon("Raichu", 26, électrique);
+        pikachu.setPokemonSupérieur(raichu);
+        raichu.setPokemonInferieur(pikachu);
+        
+        Pokemon sabelette = new Pokemon("Sabelette", 27, sol);
+        Pokemon sablaireau = new Pokemon("Sablaireau", 28, sol);
+        sabelette.setPokemonSupérieur(sablaireau);
+        sablaireau.setPokemonInferieur(sabelette);
+        
+        Pokemon nidoranF = new Pokemon("Nidoran♀", 29, poison);
+        Pokemon nidorina = new Pokemon("Nidorina", 30, poison);
+        Pokemon nidoqueen = new Pokemon("Nidoqueen", 31, poison, sol);
+        nidoranF.setPokemonSupérieur(nidorina);
+        nidorina.setPokemonInferieur(nidoranF);
+        nidorina.setPokemonSupérieur(nidoqueen);
+        nidoqueen.setPokemonInferieur(nidorina);
+        
+        Pokemon nidoranM = new Pokemon("Nidoran♂", 32, poison);
+        Pokemon nidorino = new Pokemon("Nidorino", 33, poison);
+        Pokemon nidoking = new Pokemon("Nidoking", 34, poison, sol);
+        nidoranM.setPokemonSupérieur(nidorino);
+        nidorino.setPokemonInferieur(nidoranM);
+        nidorino.setPokemonSupérieur(nidoking);
+        nidoking.setPokemonInferieur(nidorino);
+        
+        Pokemon melodelfe = new Pokemon("Mélodelfe", 35, normal, fee);
+        
+        Pokemon goupix = new Pokemon("Goupix", 37, feu);
+        Pokemon feunard = new Pokemon("Feunard", 38, feu);
+        goupix.setPokemonSupérieur(feunard);
+        feunard.setPokemonInferieur(goupix);
+
         
 
 
